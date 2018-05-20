@@ -132,8 +132,8 @@ nav h1 a {
   font-weight: bold;
   line-height: 1;
   margin: 0 20px;
-  text-align: center;
 }
+
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
@@ -235,7 +235,7 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 100%;
+	width: 90%;
     border-radius: 5%;
     
 }
@@ -269,7 +269,6 @@ nav h1 a {
 
 #reviews-container li {
   border-radius: 25px;
-  
 }
 
 #reviews-container h2 {
@@ -297,7 +296,7 @@ nav h1 a {
 #reviews-list div {
   height: 15%;
   width: 200%;
-  background-color: darkcyan;
+  background-color: #252831;
   position: absolute;
   right: 0;
   opacity: .5;
@@ -310,22 +309,25 @@ nav h1 a {
 }
 
 #reviews-list li h1 {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
   font-size: 2.5vw;
   position: relative;
+  color: white;
 }
 
 #reviews-list h3 {
+  color: white;
   text-align: right; 
   font-size: 2vw;
   position: relative;
-  top: calc(-20px - 3vw);
+  top: calc(-10px - 3vw);
 }
 
 #reviews-list span {
   font-size: 4vw;
   color: white;
   position: relative;
-  left: 3%;
+  left: 5%;
   background-color: darkorange;
   border: 10px solid darkorange;
   border-radius: 10%;

@@ -1,15 +1,10 @@
-//CMD. CD -> Desktop    CD -> Project6  -> python -m http.server      -> localhost:8000
-
 let restaurants,
   neighborhoods,
   cuisines
 var map
 var markers = []
 
-console.log("Hello");
 
-
-// ServiceWorker is a progressive technology. Ignore unsupported browsers
   if ('serviceWorker' in navigator) {
     console.log('CLIENT: service worker registration in progress.');
     navigator.serviceWorker.register('../service-worker.js').then(function() {
@@ -20,6 +15,7 @@ console.log("Hello");
   } else {
     console.log('CLIENT: service worker is not supported.');
   }
+
 
 
 /**
