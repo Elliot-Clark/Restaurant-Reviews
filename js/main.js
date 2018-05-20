@@ -6,6 +6,22 @@ let restaurants,
 var map
 var markers = []
 
+console.log("Hello");
+
+
+// ServiceWorker is a progressive technology. Ignore unsupported browsers
+  if ('serviceWorker' in navigator) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('../service-worker.js').then(function() {
+      console.log('CLIENT: service worker registration complete.');
+    }, function() {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
+
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -140,7 +156,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  
  
 createRestaurantHTML = (restaurant) => {
-  console.log(restaurant);
+ // a(restaurant);
 
   const li = document.createElement('li');
   li.style.width = "40vw";
@@ -156,34 +172,34 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   
   if (image.src.indexOf('1.jpg')!=-1) {
-    image.alt = "Words";
+    image.alt = "MISSION CHINESE FOOD";
   }
   if (image.src.indexOf('2.jpg')!=-1) {
-    image.alt = "More Words";
+    image.alt = "PIZZA";
   }
   if (image.src.indexOf('3.jpg')!=-1) {
-    image.alt = "Other Words";
+    image.alt = "KANG HO DONG BAEKJEONG";
   }
   if (image.src.indexOf('4.jpg')!=-1) {
-    image.alt = "Dumb Words";
+    image.alt = "KATZ'S DELICATESSEN";
   }
   if (image.src.indexOf('5.jpg')!=-1) {
-    image.alt = "Smart Words";
+    image.alt = "ROBERTA'S PIZZA";
   }
   if (image.src.indexOf('6.jpg')!=-1) {
-    image.alt = "Some Words";
+    image.alt = "HOMETOWN BBQ";
   }
   if (image.src.indexOf('7.jpg')!=-1) {
-    image.alt = "Weird Words";
+    image.alt = "SUPERIORITY BURGER";
   }
   if (image.src.indexOf('8.jpg')!=-1) {
-    image.alt = "The Words";
+    image.alt = "THE DUTCH";
   }
   if (image.src.indexOf('9.jpg')!=-1) {
-    image.alt = "No Words";
+    image.alt = "MU RAMEN";
   }
   if (image.src.indexOf('10.jpg')!=-1) {
-    image.alt = "Low Words";
+    image.alt = "CASA ENRIQUE";
   }
   li.append(image);
 
