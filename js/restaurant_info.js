@@ -2,16 +2,6 @@ let restaurant;
 var map;
 
 
-
-
-
-
-
-
-
-
-
-
 /**
  * Initialize Google map, called from HTML.
  */
@@ -72,35 +62,35 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   
   
-  if (image.src.indexOf('1.jpg')!==-1) {
-    image.alt = "Words";
+  if (image.src.indexOf('1.jpg')!=-1) {
+    image.alt = "MISSION CHINESE FOOD";
   }
-  if (image.src.indexOf('2.jpg')!==-1) {
-    image.alt = "More Words";
+  if (image.src.indexOf('2.jpg')!=-1) {
+    image.alt = "PIZZA";
   }
-  if (image.src.indexOf('3.jpg')!==-1) {
-    image.alt = "Other Words";
+  if (image.src.indexOf('3.jpg')!=-1) {
+    image.alt = "KANG HO DONG BAEKJEONG";
   }
-  if (image.src.indexOf('4.jpg')!==-1) {
-    image.alt = "Dumb Words";
+  if (image.src.indexOf('4.jpg')!=-1) {
+    image.alt = "KATZ'S DELICATESSEN";
   }
-  if (image.src.indexOf('5.jpg')!==-1) {
-    image.alt = "Smart Words";
+  if (image.src.indexOf('5.jpg')!=-1) {
+    image.alt = "ROBERTA'S PIZZA";
   }
-  if (image.src.indexOf('6.jpg')!==-1) {
-    image.alt = "Some Words";
+  if (image.src.indexOf('6.jpg')!=-1) {
+    image.alt = "HOMETOWN BBQ";
   }
-  if (image.src.indexOf('7.jpg')!==-1) {
-    image.alt = "Weird Words";
+  if (image.src.indexOf('7.jpg')!=-1) {
+    image.alt = "SUPERIORITY BURGER";
   }
-  if (image.src.indexOf('8.jpg')!==-1) {
-    image.alt = "The Words";
+  if (image.src.indexOf('8.jpg')!=-1) {
+    image.alt = "THE DUTCH";
   }
-  if (image.src.indexOf('9.jpg')!==-1) {
-    image.alt = "No Words";
+  if (image.src.indexOf('9.jpg')!=-1) {
+    image.alt = "MU RAMEN";
   }
-  if (image.src.indexOf('10.jpg')!==-1) {
-    image.alt = "Low Words";
+  if (image.src.indexOf('10.jpg')!=-1) {
+    image.alt = "CASA ENRIQUE";
   }
   
 
