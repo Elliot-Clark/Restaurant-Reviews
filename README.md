@@ -6,7 +6,7 @@
 
 To Open:
 
-    Open the Command Prompt. CD into the main directory with index.html. 
+    Open the Command Prompt. CD into the main directory with the "index.html" file. 
     Enter the command: python -m http.server
     Open a web broswer and enter into the URL: localhost:8000
     Find a restaurant in your area with food you like.
@@ -18,4 +18,4 @@ Suggested Browser for Use:
 Authors:
 
 	Elliot Clark
-	Finalized: 5/20/2018
+	Finalized: 6/02/2018
